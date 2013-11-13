@@ -11,6 +11,16 @@
         </state>
         <state id="https://www.easychair.org/conferences/review_add.cgi?*">
             <transition event="COWPATH:CLICK" cond="addReview2easychair" target="https://www.easychair.org/conferences/review_all.cgi?*"/>
+            <transition event="COWPATH:CLICK" cond="easychair2uni-trier" target="http://dblp.uni-trier.de/pers/*">
+                <script>GoTo("http://dblp.uni-trier.de/").Paste("$author").Into("//*[@NAME='q']").Click("//*[@VALUE='Submit']");</script>
+            </transition>			
+            <onentry>
+                <script>Copy("//*[text()='Authors:']/../../td[222]/text()","(.*?)( and |,|$)").Into("$author");</script>
+            </onentry>
         </state>
+        <state id="http://dblp.uni-trier.de/pers/*">
+            <transition event="COWPATH:CLICK" cond="uni-trier2easychair" target="https://www.easychair.org/conferences/review_add.cgi?*"/>
+        </state>
+       
     </state>
 </scxml>
