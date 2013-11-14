@@ -15,7 +15,7 @@
                 <script>GoTo("http://dblp.uni-trier.de/").Paste("$author").Into("//*[@NAME='q']").Click("//*[@VALUE='Submit']");</script>
             </transition>			
             <onentry>
-                <script>Copy("//*[text()='Authors:']/../../td[cambio3]/text()","(.*?)( and |,|$)").Into("$author");</script>
+                <script>Copy("//*[text()='Authors:']/../../td[cambiado]/text()","(.*?)( and |,|$)").Into("$author");</script>
             </onentry>
         </state>
         <state id="http://dblp.uni-trier.de/pers/*">
