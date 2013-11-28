@@ -16,9 +16,5 @@
                 <script>Copy("//*[text()='Authors:']/../../td[]/text()","(.*?)( and |,|$)").Into("$author")</script>
             </onentry>
         </state>
-       <state id="http://dblp.uni-trier.de/pers/*">
-            <transition event="COWPATH:CLICK" cond="uni-trier2easychair" target="https://www.easychair.org/conferences/review_add.cgi?*"/>
-        </state>
-        		
     </state>
 </scxml>
