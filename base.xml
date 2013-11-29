@@ -5,7 +5,6 @@
         </initial>
         <state id="https://www.easychair.org/conferences/review_all.cgi?*">			
             <transition event="COWPATH:LOAD" cond= "https://www.easychair.org/conferences/review_add.cgi?*" target="https://www.easychair.org/conferences/review_add.cgi?*"/>
-            <transition event="COWPATH:LOAD" cond="htps://www.easychair.org/conferences/submission_info_show.cgi?*" target="https://www.easychair.org/conferences/submission_info_show.cgi?*"/>
         </state>	
     </state>
 </scxml>
