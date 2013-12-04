@@ -9,9 +9,6 @@
         </state>	
         <state id="https://www.easychair.org/conferences/review_add.cgi?*">
             <transition event="COWPATH:CLICK" cond="easychair2easychair" target="https://www.easychair.org/conferences/review_all.cgi?*"/>
-            <transition event="COWPATH:CLICK" cond="easychair2uni-trier" target="http://dblp.uni-trier.de/pers/*">
-                <script>GoTo("http://dblp.uni-trier.de/").Paste("$author").Into("//*[@NAME='q']").Click("//*[@VALUE='Submit']");</script>
-            </transition>			
         </state>
     </state>
 </scxml>
