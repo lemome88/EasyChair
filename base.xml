@@ -13,8 +13,5 @@
                 <script>GoTo("http://dblp.uni-trier.de/").Paste("$author").Into("//*[@NAME='q']").Click("//*[@VALUE='Submit']");</script>
             </transition>			
         </state>
-        <state id="https://www.easychair.org/conferences/submission_info_show.cgi?*">
-            <transition event="COWPATH:CLICK" cond="easychair2easychair" target="https://www.easychair.org/conferences/review_all.cgi?*"/>
-        </state>		
     </state>
 </scxml>
