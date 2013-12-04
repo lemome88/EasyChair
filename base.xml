@@ -11,9 +11,7 @@
             <transition event="COWPATH:CLICK" cond="easychair2uni-trier" target="http://dblp.uni-trier.de/pers/*">
                 <script>GoTo("http://dblp.uni-trier.de/").Paste("$author").Into("//*[@NAME='q']").Click("//*[@VALUE='Submit']");</script>
             </transition>			
-            <onentry>
-                <script>Copy("//*[text()='Authors:']/../../td[]/text()","(.*?)( and |,|$)").Into("$author")</script>
-            </onentry>
+            
         </state>
     </state>
 </scxml>
